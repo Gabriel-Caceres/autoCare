@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro | AutoCare</title>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Auto<span>Care</span>
+        </a>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="acciones">
+
+            <a
+                href="login.html"
+                id="enlaceSesion"
+                class="enlace-login"
+            >
+                Ingresar
+            </a>
+
+            <a
+                href="carrito.html"
+                class="boton-carrito"
+            >
+                🛒 Carrito
+                <span id="cantidadCarrito">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="registro-seccion">
+
+        <div class="registro-contenedor">
+
+            <div class="registro-titulo">
+
+                <span>CREAR CUENTA</span>
+
+                <h1>Regístrate en AutoCare</h1>
+
+                <p>
+                    Completa tus datos para crear
+                    tu cuenta de cliente.
+                </p>
+
+            </div>
+
+
+            <form id="formRegistro" novalidate>
+
+                <div class="registro-grid">
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="run">
+                            RUN
+                        </label>
+
+                        <input
+                            type="text"
+                            id="run"
+                            name="run"
+                            minlength="7"
+                            maxlength="9"
+                            placeholder="12345678K"
+                            autocomplete="off"
+                        >
+
+                        <small
+                            id="errorRun"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            maxlength="50"
+                            placeholder="Ingresa tu nombre"
+                            autocomplete="given-name"
+                        >
+
+                        <small
+                            id="errorNombre"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario registro-completo">
+
+                        <label for="apellido">
+                            Apellidos
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            maxlength="100"
+                            placeholder="Ingresa tus apellidos"
+                            autocomplete="family-name"
+                        >
+
+                        <small
+                            id="errorApellido"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario registro-completo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            maxlength="100"
+                            placeholder="ejemplo@duoc.cl"
+                            autocomplete="email"
+                        >
+
+                        <small
+                            id="errorCorreo"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="password">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="4"
+                            maxlength="10"
+                            placeholder="4 a 10 caracteres"
+                            autocomplete="new-password"
+                        >
+
+                        <small
+                            id="errorPassword"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="confirmarPassword">
+                            Confirmar contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmarPassword"
+                            name="confirmarPassword"
+                            minlength="4"
+                            maxlength="10"
+                            placeholder="Repite tu contraseña"
+                            autocomplete="new-password"
+                        >
+
+                        <small
+                            id="errorConfirmar"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario registro-completo">
+
+                        <label for="fechaNacimiento">
+                            Fecha de nacimiento
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fechaNacimiento"
+                            name="fechaNacimiento"
+                        >
+
+                        <small
+                            id="errorFechaNacimiento"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="region">
+                            Región
+                        </label>
+
+                        <select
+                            id="region"
+                            name="region"
+                        >
+
+                            <option value="">
+                                Selecciona una región
+                            </option>
+
+                        </select>
+
+                        <small
+                            id="errorRegion"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="comuna">
+                            Comuna
+                        </label>
+
+                        <select
+                            id="comuna"
+                            name="comuna"
+                            disabled
+                        >
+
+                            <option value="">
+                                Primero selecciona una región
+                            </option>
+
+                        </select>
+
+                        <small
+                            id="errorComuna"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario registro-completo">
+
+                        <label for="direccion">
+                            Dirección
+                        </label>
+
+                        <textarea
+                            id="direccion"
+                            name="direccion"
+                            maxlength="300"
+                            rows="3"
+                            placeholder="Ingresa tu dirección"
+                        ></textarea>
+
+                        <small
+                            id="errorDireccion"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="mensajeRegistro"
+                    class="mensaje-login"
+                ></div>
+
+
+                <button
+                    type="submit"
+                    class="btn-login"
+                >
+                    Crear cuenta
+                </button>
+
+
+                <p class="registro-enlace">
+
+                    ¿Ya tienes una cuenta?
+
+                    <a href="login.html">
+                        Inicia sesión
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-contenido">
+
+        <div class="footer-marca">
+
+            <h2 class="logo">
+                Auto<span>Care</span>
+            </h2>
+
+            <p>
+                Productos para el cuidado,
+                limpieza y protección de tu vehículo.
+            </p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>Tienda</h3>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a href="carrito.html">
+                Carrito
+            </a>
+
+            <a href="login.html">
+                Mi cuenta
+            </a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>AutoCare</h3>
+
+            <a href="nosotros.html">
+                Nosotros
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>Proyecto</h3>
+
+            <p>
+                Desarrollo Full Stack II
+            </p>
+
+            <p>
+                DSY1104
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-inferior">
+
+        <p>
+            © 2026 AutoCare |
+            Proyecto académico DSY1104
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="./js/registro.js"></script>
+<script src="./js/general.js"></script>
+
+</body>
+
+</html>

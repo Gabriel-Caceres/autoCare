@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito | AutoCare</title>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Auto<span>Care</span>
+        </a>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="acciones">
+
+            <a
+                href="login.html"
+                id="enlaceSesion"
+                class="enlace-login"
+            >
+                Ingresar
+            </a>
+
+            <a
+                href="carrito.html"
+                class="boton-carrito"
+            >
+                🛒 Carrito
+                <span id="cantidadCarrito">0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="pagina-titulo">
+
+        <div class="contenedor">
+
+            <span class="etiqueta">
+                MI COMPRA
+            </span>
+
+            <h1>
+                Carrito de compras
+            </h1>
+
+            <p>
+                Revisa tus productos antes de finalizar la compra.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="seccion">
+
+        <div class="contenedor">
+
+            <div class="carrito-layout">
+
+                <div class="carrito-productos">
+
+                    <div class="carrito-encabezado">
+
+                        <div>
+
+                            <span class="etiqueta">
+                                PRODUCTOS
+                            </span>
+
+                            <h2>
+                                Tu carrito
+                            </h2>
+
+                        </div>
+
+                        <a
+                            href="productos.html"
+                            class="seguir-comprando"
+                        >
+                            ← Seguir comprando
+                        </a>
+
+                    </div>
+
+                    <div id="listaCarrito"></div>
+
+                </div>
+
+
+                <aside class="carrito-resumen">
+
+                    <h2>
+                        Resumen de compra
+                    </h2>
+
+                    <div class="resumen-linea">
+
+                        <span>
+                            Productos
+                        </span>
+
+                        <strong id="resumenCantidad">
+                            0
+                        </strong>
+
+                    </div>
+
+                    <div class="resumen-linea">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="resumenSubtotal">
+                            $0
+                        </strong>
+
+                    </div>
+
+                    <div class="resumen-envio">
+
+                        <span>
+                            Envío
+                        </span>
+
+                        <strong>
+                            Gratis
+                        </strong>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="resumen-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="resumenTotal">
+                            $0
+                        </strong>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="btnFinalizarCompra"
+                        class="btn btn-principal btn-finalizar"
+                    >
+                        Finalizar compra
+                    </button>
+
+                    <button
+                        type="button"
+                        id="btnVaciarCarrito"
+                        class="btn btn-secundario btn-vaciar"
+                    >
+                        Vaciar carrito
+                    </button>
+
+                    <p class="carrito-ayuda">
+                        Debes iniciar sesión como Cliente
+                        para finalizar tu compra.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-contenido">
+
+        <div class="footer-marca">
+
+            <h2 class="logo">
+                Auto<span>Care</span>
+            </h2>
+
+            <p>
+                Productos para el cuidado,
+                limpieza y protección de tu vehículo.
+            </p>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>Tienda</h3>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a href="carrito.html">
+                Carrito
+            </a>
+
+            <a href="login.html">
+                Mi cuenta
+            </a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>AutoCare</h3>
+
+            <a href="nosotros.html">
+                Nosotros
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+
+        <div class="footer-columna">
+
+            <h3>Proyecto</h3>
+
+            <p>
+                Desarrollo Full Stack II
+            </p>
+
+            <p>
+                DSY1104
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-inferior">
+
+        <p>
+            © 2026 AutoCare |
+            Proyecto académico DSY1104
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="./js/productos-data.js"></script>
+<script src="./js/carrito.js"></script>
+<script src="./js/general.js"></script>
+
+</body>
+</html>

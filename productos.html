@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | AutoCare</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Auto<span>Care</span>
+        </a>
+
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html" class="activo">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="acciones">
+            <a href="login.html" id="enlaceSesion" class="enlace-login">
+                Ingresar
+            </a>
+
+            <a href="carrito.html" class="boton-carrito">
+                🛒 Carrito
+                <span id="cantidadCarrito">0</span>
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="pagina-titulo">
+        <div class="contenedor">
+
+            <span class="etiqueta">
+                TIENDA AUTOCARE
+            </span>
+
+            <h1>Nuestros productos</h1>
+
+            <p>
+                Encuentra todo lo necesario para cuidar,
+                proteger y mantener tu vehículo.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="productos-seccion">
+
+        <div class="contenedor">
+
+            <div class="filtros">
+
+                <input
+                    type="text"
+                    id="buscar"
+                    placeholder="Buscar producto..."
+                    autocomplete="off"
+                >
+
+                <select id="categoria">
+
+                    <option value="Todos">
+                        Todas las categorías
+                    </option>
+
+                    <option value="Limpieza">
+                        Limpieza
+                    </option>
+
+                    <option value="Interior">
+                        Interior
+                    </option>
+
+                    <option value="Exterior">
+                        Exterior
+                    </option>
+
+                    <option value="Seguridad">
+                        Seguridad
+                    </option>
+
+                    <option value="Accesorios">
+                        Accesorios
+                    </option>
+
+                </select>
+
+            </div>
+
+            <p
+                id="mensajeProductos"
+                class="mensaje-productos"
+            ></p>
+
+            <div
+                id="listaProductos"
+                class="productos-grid"
+            ></div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-contenido">
+
+        <div class="footer-marca">
+
+            <h2 class="logo">
+                Auto<span>Care</span>
+            </h2>
+
+            <p>
+                Productos para el cuidado,
+                limpieza y protección de tu vehículo.
+            </p>
+
+        </div>
+
+        <div class="footer-columna">
+
+            <h3>Tienda</h3>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a href="carrito.html">
+                Carrito
+            </a>
+
+            <a href="login.html">
+                Mi cuenta
+            </a>
+
+        </div>
+
+        <div class="footer-columna">
+
+            <h3>AutoCare</h3>
+
+            <a href="nosotros.html">
+                Nosotros
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </div>
+
+        <div class="footer-columna">
+
+            <h3>Proyecto</h3>
+
+            <p>Desarrollo Full Stack II</p>
+            <p>DSY1104</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-inferior">
+        <p>
+            © 2026 AutoCare |
+            Proyecto académico DSY1104
+        </p>
+    </div>
+
+</footer>
+
+<script src="./js/productos-data.js"></script>
+<script src="./js/productos.js"></script>
+<script src="./js/general.js"></script>
+
+</body>
+</html>
