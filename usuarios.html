@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Productos | AutoCare</title>
+    <title>Administrar usuarios | AutoCare</title>
 
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -19,11 +19,15 @@
     </a>
 
     <div class="admin-usuario">
-        <span>Usuario</span>
+
+        <span>
+            Usuario
+        </span>
 
         <a href="../index.html">
             Ir a la tienda
         </a>
+
     </div>
 
 </header>
@@ -46,10 +50,7 @@
                 Inicio
             </a>
 
-            <a
-                href="productos.html"
-                class="admin-activo"
-            >
+            <a href="productos.html">
                 Productos
             </a>
 
@@ -59,7 +60,7 @@
 
             <a
                 href="usuarios.html"
-                class="solo-admin"
+                class="admin-activo solo-admin"
             >
                 Usuarios
             </a>
@@ -80,26 +81,26 @@
             <div>
 
                 <span>
-                    PRODUCTOS
+                    MANTENEDOR
                 </span>
 
                 <h1>
-                    Listado de productos
+                    Usuarios
                 </h1>
 
                 <p>
-                    Revisa los productos disponibles
-                    en AutoCare.
+                    Administra los usuarios
+                    registrados en AutoCare.
                 </p>
 
             </div>
 
+
             <a
-                href="nuevo-producto.html"
-                id="btnNuevoProducto"
+                href="nuevo-usuario.html"
                 class="btn btn-principal solo-admin"
             >
-                Nuevo producto
+                Nuevo usuario
             </a>
 
         </section>
@@ -109,14 +110,14 @@
 
             <div class="admin-buscador">
 
-                <label for="buscarProducto">
-                    Buscar producto
+                <label for="buscarUsuario">
+                    Buscar usuario
                 </label>
 
                 <input
                     type="text"
-                    id="buscarProducto"
-                    placeholder="Buscar por código, nombre o categoría"
+                    id="buscarUsuario"
+                    placeholder="Nombre, apellido, correo o rol"
                     autocomplete="off"
                 >
 
@@ -130,17 +131,18 @@
                     <thead>
 
                         <tr>
-                            <th>Código</th>
+                            <th>RUN</th>
                             <th>Nombre</th>
-                            <th>Categoría</th>
-                            <th>Precio</th>
-                            <th>Stock</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Región</th>
+                            <th>Comuna</th>
                             <th>Acciones</th>
                         </tr>
 
                     </thead>
 
-                    <tbody id="tablaProductos"></tbody>
+                    <tbody id="tablaUsuarios"></tbody>
 
                 </table>
 
@@ -148,7 +150,7 @@
 
 
             <div
-                id="mensajeProductosAdmin"
+                id="mensajeUsuariosAdmin"
                 class="admin-mensaje"
             ></div>
 
@@ -160,7 +162,7 @@
 
 
 <script src="../js/admin-sesion.js"></script>
-<script src="../js/admin-productos.js"></script>
+<script src="../js/admin-usuario.js"></script>
 
 </body>
 
