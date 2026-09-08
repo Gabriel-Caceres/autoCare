@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuevo producto | AutoCare</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="admin-body">
+
+<header class="admin-header">
+
+    <a href="../index.html" class="logo">
+        Auto<span>Care</span>
+    </a>
+
+    <div class="admin-usuario">
+
+        <span>
+            Usuario
+        </span>
+
+        <a href="../index.html">
+            Ir a la tienda
+        </a>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-menu">
+
+        <h3>
+            Administración
+        </h3>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="solo-admin"
+            >
+                Inicio
+            </a>
+
+            <a
+                href="productos.html"
+                class="admin-activo"
+            >
+                Productos
+            </a>
+
+            <a href="pedidos.html">
+                Pedidos
+            </a>
+
+            <a
+                href="usuarios.html"
+                class="solo-admin"
+            >
+                Usuarios
+            </a>
+
+            <a href="../index.html">
+                Tienda
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-contenido">
+
+        <section class="admin-titulo">
+
+            <span>
+                MANTENEDOR DE PRODUCTOS
+            </span>
+
+            <h1>
+                Nuevo producto
+            </h1>
+
+            <p>
+                Completa los datos para registrar
+                un nuevo producto.
+            </p>
+
+        </section>
+
+
+        <section class="admin-formulario-contenedor">
+
+            <form id="formNuevoProducto" novalidate>
+
+                <div class="admin-form-grid">
+
+                    <div class="grupo-formulario">
+
+                        <label for="codigo">
+                            Código
+                        </label>
+
+                        <input
+                            type="text"
+                            id="codigo"
+                            name="codigo"
+                            minlength="3"
+                            placeholder="Ejemplo: AUT007"
+                            autocomplete="off"
+                        >
+
+                        <small
+                            id="errorCodigo"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            maxlength="100"
+                            placeholder="Nombre del producto"
+                            autocomplete="off"
+                        >
+
+                        <small
+                            id="errorNombre"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="precio">
+                            Precio
+                        </label>
+
+                        <input
+                            type="number"
+                            id="precio"
+                            name="precio"
+                            min="0"
+                            placeholder="Ejemplo: 19990"
+                        >
+
+                        <small
+                            id="errorPrecio"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="stock">
+                            Stock
+                        </label>
+
+                        <input
+                            type="number"
+                            id="stock"
+                            name="stock"
+                            min="0"
+                            step="1"
+                            placeholder="Ejemplo: 10"
+                        >
+
+                        <small
+                            id="errorStock"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="stockCritico">
+                            Stock crítico
+                        </label>
+
+                        <input
+                            type="number"
+                            id="stockCritico"
+                            name="stockCritico"
+                            min="0"
+                            step="1"
+                            placeholder="Opcional. Ejemplo: 5"
+                        >
+
+                        <small
+                            id="errorStockCritico"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="categoria">
+                            Categoría
+                        </label>
+
+                        <select
+                            id="categoria"
+                            name="categoria"
+                        >
+
+                            <option value="">
+                                Selecciona una categoría
+                            </option>
+
+                            <option value="Limpieza">
+                                Limpieza
+                            </option>
+
+                            <option value="Interior">
+                                Interior
+                            </option>
+
+                            <option value="Exterior">
+                                Exterior
+                            </option>
+
+                            <option value="Accesorios">
+                                Accesorios
+                            </option>
+
+                            <option value="Seguridad">
+                                Seguridad
+                            </option>
+
+                        </select>
+
+                        <small
+                            id="errorCategoria"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario admin-campo-completo">
+
+                        <label for="imagen">
+                            Ruta de imagen
+                        </label>
+
+                        <input
+                            type="text"
+                            id="imagen"
+                            name="imagen"
+                            placeholder="Opcional. Ejemplo: img/producto7.jpg"
+                            autocomplete="off"
+                        >
+
+                        <small
+                            id="errorImagen"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+
+                    <div class="grupo-formulario admin-campo-completo">
+
+                        <label for="descripcion">
+                            Descripción
+                        </label>
+
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            maxlength="500"
+                            rows="5"
+                            placeholder="Descripción opcional del producto"
+                        ></textarea>
+
+                        <div class="contador-caracteres">
+                            <span id="contadorDescripcion">0</span>/500
+                        </div>
+
+                        <small
+                            id="errorDescripcion"
+                            class="mensaje-error-form"
+                        ></small>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="mensajeProducto"
+                    class="mensaje-login"
+                ></div>
+
+
+                <div class="admin-form-botones">
+
+                    <a
+                        href="productos.html"
+                        class="btn-cancelar-admin"
+                    >
+                        Cancelar
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="btn-login"
+                    >
+                        Guardar producto
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/admin-sesion.js"></script>
+<script src="../js/nuevo-producto.js"></script>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Productos | AutoCare</title>
+    <title>Pedidos | AutoCare</title>
 
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -19,11 +19,15 @@
     </a>
 
     <div class="admin-usuario">
-        <span>Usuario</span>
+
+        <span>
+            Usuario
+        </span>
 
         <a href="../index.html">
             Ir a la tienda
         </a>
+
     </div>
 
 </header>
@@ -46,14 +50,14 @@
                 Inicio
             </a>
 
-            <a
-                href="productos.html"
-                class="admin-activo"
-            >
+            <a href="productos.html">
                 Productos
             </a>
 
-            <a href="pedidos.html">
+            <a
+                href="pedidos.html"
+                class="admin-activo"
+            >
                 Pedidos
             </a>
 
@@ -75,32 +79,20 @@
 
     <main class="admin-contenido">
 
-        <section class="admin-titulo admin-titulo-flex">
+        <section class="admin-titulo">
 
-            <div>
+            <span>
+                GESTIÓN DE PEDIDOS
+            </span>
 
-                <span>
-                    PRODUCTOS
-                </span>
+            <h1>
+                Pedidos
+            </h1>
 
-                <h1>
-                    Listado de productos
-                </h1>
-
-                <p>
-                    Revisa los productos disponibles
-                    en AutoCare.
-                </p>
-
-            </div>
-
-            <a
-                href="nuevo-producto.html"
-                id="btnNuevoProducto"
-                class="btn btn-principal solo-admin"
-            >
-                Nuevo producto
-            </a>
+            <p>
+                Revisa los pedidos realizados
+                por los clientes de AutoCare.
+            </p>
 
         </section>
 
@@ -109,14 +101,14 @@
 
             <div class="admin-buscador">
 
-                <label for="buscarProducto">
-                    Buscar producto
+                <label for="buscarPedido">
+                    Buscar pedido
                 </label>
 
                 <input
                     type="text"
-                    id="buscarProducto"
-                    placeholder="Buscar por código, nombre o categoría"
+                    id="buscarPedido"
+                    placeholder="Número, cliente, correo o estado"
                     autocomplete="off"
                 >
 
@@ -130,17 +122,17 @@
                     <thead>
 
                         <tr>
-                            <th>Código</th>
-                            <th>Nombre</th>
-                            <th>Categoría</th>
-                            <th>Precio</th>
-                            <th>Stock</th>
+                            <th>N° Pedido</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Total</th>
+                            <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
 
                     </thead>
 
-                    <tbody id="tablaProductos"></tbody>
+                    <tbody id="tablaPedidos"></tbody>
 
                 </table>
 
@@ -148,7 +140,7 @@
 
 
             <div
-                id="mensajeProductosAdmin"
+                id="mensajePedidos"
                 class="admin-mensaje"
             ></div>
 
@@ -160,7 +152,7 @@
 
 
 <script src="../js/admin-sesion.js"></script>
-<script src="../js/admin-productos.js"></script>
+<script src="../js/pedidos.js"></script>
 
 </body>
 

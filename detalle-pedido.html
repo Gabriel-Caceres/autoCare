@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Detalle producto | AutoCare</title>
+    <title>Detalle del pedido | AutoCare</title>
 
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -50,14 +50,14 @@
                 Inicio
             </a>
 
-            <a
-                href="productos.html"
-                class="admin-activo"
-            >
+            <a href="productos.html">
                 Productos
             </a>
 
-            <a href="pedidos.html">
+            <a
+                href="pedidos.html"
+                class="admin-activo"
+            >
                 Pedidos
             </a>
 
@@ -84,33 +84,33 @@
             <div>
 
                 <span>
-                    FICHA DE PRODUCTO
+                    DETALLE DEL PEDIDO
                 </span>
 
-                <h1>
-                    Detalle del producto
+                <h1 id="tituloPedido">
+                    Pedido
                 </h1>
 
                 <p>
-                    Información completa del
-                    producto seleccionado.
+                    Información del pedido seleccionado.
                 </p>
 
             </div>
 
+
             <a
-                href="productos.html"
+                href="pedidos.html"
                 class="btn-cancelar-admin"
             >
-                Volver
+                Volver a pedidos
             </a>
 
         </section>
 
 
         <section
-            id="detalleProductoAdmin"
-            class="admin-detalle-producto"
+            id="detallePedido"
+            class="pedido-detalle"
         ></section>
 
     </main>
@@ -119,8 +119,7 @@
 
 
 <script src="../js/admin-sesion.js"></script>
-<script src="../js/admin-detalle-producto.js"></script>
-
+<script src="../js/detalle-pedido.js"></script>
 </body>
 
 </html>
