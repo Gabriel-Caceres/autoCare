@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del pedido | AutoCare</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="admin-body">
+
+<header class="admin-header">
+
+    <a href="../index.html" class="logo">
+        Auto<span>Care</span>
+    </a>
+
+    <div class="admin-usuario">
+
+        <span>
+            Usuario
+        </span>
+
+        <a href="../index.html">
+            Ir a la tienda
+        </a>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-menu">
+
+        <h3>
+            Administración
+        </h3>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="solo-admin"
+            >
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a
+                href="pedidos.html"
+                class="admin-activo"
+            >
+                Pedidos
+            </a>
+
+            <a
+                href="usuarios.html"
+                class="solo-admin"
+            >
+                Usuarios
+            </a>
+
+            <a href="../index.html">
+                Tienda
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-contenido">
+
+        <section class="admin-titulo admin-titulo-flex">
+
+            <div>
+
+                <span>
+                    DETALLE DEL PEDIDO
+                </span>
+
+                <h1 id="tituloPedido">
+                    Pedido
+                </h1>
+
+                <p>
+                    Información del pedido seleccionado.
+                </p>
+
+            </div>
+
+
+            <a
+                href="pedidos.html"
+                class="btn-cancelar-admin"
+            >
+                Volver a pedidos
+            </a>
+
+        </section>
+
+
+        <section
+            id="detallePedido"
+            class="pedido-detalle"
+        ></section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/admin-sesion.js"></script>
+<script src="../js/detalle-pedido.js"></script>
+</body>
+
+</html>

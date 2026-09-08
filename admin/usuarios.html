@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrar usuarios | AutoCare</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="admin-body">
+
+<header class="admin-header">
+
+    <a href="../index.html" class="logo">
+        Auto<span>Care</span>
+    </a>
+
+    <div class="admin-usuario">
+
+        <span>
+            Usuario
+        </span>
+
+        <a href="../index.html">
+            Ir a la tienda
+        </a>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-menu">
+
+        <h3>
+            Administración
+        </h3>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="solo-admin"
+            >
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a href="pedidos.html">
+                Pedidos
+            </a>
+
+            <a
+                href="usuarios.html"
+                class="admin-activo solo-admin"
+            >
+                Usuarios
+            </a>
+
+            <a href="../index.html">
+                Tienda
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-contenido">
+
+        <section class="admin-titulo admin-titulo-flex">
+
+            <div>
+
+                <span>
+                    MANTENEDOR
+                </span>
+
+                <h1>
+                    Usuarios
+                </h1>
+
+                <p>
+                    Administra los usuarios
+                    registrados en AutoCare.
+                </p>
+
+            </div>
+
+
+            <a
+                href="nuevo-usuario.html"
+                class="btn btn-principal solo-admin"
+            >
+                Nuevo usuario
+            </a>
+
+        </section>
+
+
+        <section class="admin-tabla-contenedor">
+
+            <div class="admin-buscador">
+
+                <label for="buscarUsuario">
+                    Buscar usuario
+                </label>
+
+                <input
+                    type="text"
+                    id="buscarUsuario"
+                    placeholder="Nombre, apellido, correo o rol"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="tabla-responsive">
+
+                <table class="admin-tabla">
+
+                    <thead>
+
+                        <tr>
+                            <th>RUN</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Región</th>
+                            <th>Comuna</th>
+                            <th>Acciones</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tablaUsuarios"></tbody>
+
+                </table>
+
+            </div>
+
+
+            <div
+                id="mensajeUsuariosAdmin"
+                class="admin-mensaje"
+            ></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/admin-sesion.js"></script>
+<script src="../js/admin-usuario.js"></script>
+
+</body>
+
+</html>

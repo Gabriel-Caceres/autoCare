@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel de administración | AutoCare</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="admin-body">
+
+<header class="admin-header">
+
+    <a href="../index.html" class="logo">
+        Auto<span>Care</span>
+    </a>
+
+    <div class="admin-usuario">
+
+        <span id="nombreUsuarioAdmin">
+            Administrador
+        </span>
+
+        <a href="../index.html">
+            Ir a la tienda
+        </a>
+
+        <button
+            type="button"
+            id="btnCerrarSesion"
+            class="admin-btn-salir"
+        >
+            Cerrar sesión
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-menu">
+
+        <h3>
+            Administración
+        </h3>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="admin-activo solo-admin"
+            >
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a href="pedidos.html">
+                Pedidos
+            </a>
+
+            <a
+                href="usuarios.html"
+                class="solo-admin"
+            >
+                Usuarios
+            </a>
+
+            <a href="../index.html">
+                Tienda
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-contenido">
+
+        <section class="admin-titulo">
+
+            <span>
+                PANEL DE CONTROL
+            </span>
+
+            <h1>
+                Administración AutoCare
+            </h1>
+
+            <p>
+                Resumen general del sistema.
+            </p>
+
+        </section>
+
+
+        <section class="admin-resumen">
+
+            <article class="admin-resumen-card">
+
+                <span>
+                    PRODUCTOS
+                </span>
+
+                <strong id="totalProductos">
+                    0
+                </strong>
+
+                <p>
+                    Productos registrados
+                </p>
+
+                <a href="productos.html">
+                    Ver productos →
+                </a>
+
+            </article>
+
+
+            <article class="admin-resumen-card solo-admin">
+
+                <span>
+                    USUARIOS
+                </span>
+
+                <strong id="totalUsuarios">
+                    0
+                </strong>
+
+                <p>
+                    Usuarios registrados
+                </p>
+
+                <a href="usuarios.html">
+                    Ver usuarios →
+                </a>
+
+            </article>
+
+
+            <article class="admin-resumen-card">
+
+                <span>
+                    PEDIDOS
+                </span>
+
+                <strong id="totalPedidos">
+                    0
+                </strong>
+
+                <p>
+                    Pedidos registrados
+                </p>
+
+                <a href="pedidos.html">
+                    Ver pedidos →
+                </a>
+
+            </article>
+
+
+            <article class="admin-resumen-card">
+
+                <span>
+                    VENTAS
+                </span>
+
+                <strong id="totalVentas">
+                    $0
+                </strong>
+
+                <p>
+                    Total de pedidos realizados
+                </p>
+
+                <a href="pedidos.html">
+                    Revisar ventas →
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <section class="admin-dashboard-grid">
+
+            <article class="admin-dashboard-panel">
+
+                <div class="admin-panel-titulo">
+
+                    <div>
+
+                        <span>
+                            ACTIVIDAD
+                        </span>
+
+                        <h2>
+                            Últimos pedidos
+                        </h2>
+
+                    </div>
+
+                    <a href="pedidos.html">
+                        Ver todos
+                    </a>
+
+                </div>
+
+                <div
+                    id="ultimosPedidos"
+                    class="ultimos-pedidos"
+                ></div>
+
+            </article>
+
+
+            <article class="admin-dashboard-panel">
+
+                <div class="admin-panel-titulo">
+
+                    <div>
+
+                        <span>
+                            INVENTARIO
+                        </span>
+
+                        <h2>
+                            Stock bajo
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="productosStockBajo"
+                    class="productos-stock-bajo"
+                ></div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/admin-sesion.js"></script>
+<script src="../js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

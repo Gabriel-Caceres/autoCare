@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos | AutoCare</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="admin-body">
+
+<header class="admin-header">
+
+    <a href="../index.html" class="logo">
+        Auto<span>Care</span>
+    </a>
+
+    <div class="admin-usuario">
+
+        <span>
+            Usuario
+        </span>
+
+        <a href="../index.html">
+            Ir a la tienda
+        </a>
+
+    </div>
+
+</header>
+
+
+<div class="admin-layout">
+
+    <aside class="admin-menu">
+
+        <h3>
+            Administración
+        </h3>
+
+        <nav>
+
+            <a
+                href="index.html"
+                class="solo-admin"
+            >
+                Inicio
+            </a>
+
+            <a href="productos.html">
+                Productos
+            </a>
+
+            <a
+                href="pedidos.html"
+                class="admin-activo"
+            >
+                Pedidos
+            </a>
+
+            <a
+                href="usuarios.html"
+                class="solo-admin"
+            >
+                Usuarios
+            </a>
+
+            <a href="../index.html">
+                Tienda
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="admin-contenido">
+
+        <section class="admin-titulo">
+
+            <span>
+                GESTIÓN DE PEDIDOS
+            </span>
+
+            <h1>
+                Pedidos
+            </h1>
+
+            <p>
+                Revisa los pedidos realizados
+                por los clientes de AutoCare.
+            </p>
+
+        </section>
+
+
+        <section class="admin-tabla-contenedor">
+
+            <div class="admin-buscador">
+
+                <label for="buscarPedido">
+                    Buscar pedido
+                </label>
+
+                <input
+                    type="text"
+                    id="buscarPedido"
+                    placeholder="Número, cliente, correo o estado"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="tabla-responsive">
+
+                <table class="admin-tabla">
+
+                    <thead>
+
+                        <tr>
+                            <th>N° Pedido</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tablaPedidos"></tbody>
+
+                </table>
+
+            </div>
+
+
+            <div
+                id="mensajePedidos"
+                class="admin-mensaje"
+            ></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/admin-sesion.js"></script>
+<script src="../js/pedidos.js"></script>
+
+</body>
+
+</html>
