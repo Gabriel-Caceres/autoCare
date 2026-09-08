@@ -36,7 +36,3 @@ La carpeta `Documentacion` contiene:
 
 - `AutoCare_ERS_V1.docx`
 - `AutoCare_Planilla_Requerimientos.xlsx`
-
-## Entrega en GitHub
-
-Antes de entregar, crear o utilizar un repositorio público, subir esta carpeta y entregar su enlace. Cada integrante debe realizar commits propios con mensajes descriptivos. El historial colaborativo debe ser real y no se incluye dentro del archivo comprimido.
